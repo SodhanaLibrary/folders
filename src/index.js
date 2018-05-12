@@ -7,6 +7,7 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import animaticonApp from './reducers/index';
 import InitialState from './reducers/InitialState';
 import "./sass/index.scss";
+import "./sass/modal.scss";
 
 let store = createStore(animaticonApp, InitialState, compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f

@@ -7,10 +7,10 @@ export const updateSelectedDir = selectedDir => {
   }
 }
 
-export const createDirectory = dir => {
+export const updateDirectories = dirs => {
   return {
-    type: actions.CREATE_DIR,
-    dir
+    type: actions.UPDATE_DIRS,
+    dirs
   }
 }
 
@@ -21,9 +21,9 @@ export const deleteDirectory = dir => {
   }
 }
 
-export const showHideDirModal = show => {
+export const showHideDirModal = showDirModal => {
   return {
     type: actions.SHOW_HIDE_ADD_DIR_MODAL,
-    show
+    showDirModal
   }
 }

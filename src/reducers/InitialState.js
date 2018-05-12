@@ -1,10 +1,13 @@
 export default {
   app:{
     dirs:{
-      "folder1":{},
+      "folder1":{
+        "folder3":{},
+        "folder4":{}
+      },
       "folder2":{}
     },
-    selectedDir:null,
-    showHideDirModal:false
+    selectedDir:"",
+    showDirModal:false
   }
 };
