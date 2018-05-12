@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+background-color: #fbfbfb;
+font-size: 14px;
+color: #333;
+margin: 0;
+font-family: Avenir-Book;
+}
+
+a {
+ text-decoration: none;
+}
+
+.body_content {
+  border: 1px solid #ccc;
+  margin: auto;
+  width: 1000px;
+  padding: 20px;
+  &__head {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    &--title {
+      font-size: 2.5em;
+    }
+    &--actions {
+      align-items: center;
+      display: flex;
+      width: 320px;
+    }
+  }
+  &__main {
+    display: flex;
+  }
+}
+
+.btn {
+  font-family: Avenir-Book;
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: #bbb;
+}
+
+.primary-btn {
+  border-radius: 3px;
+  background-color: #4b74ff;
+  color: #fbfbfb;
+  width: 100%;
+}
+
+.folder {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  span {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  &:hover {
+    border: 1px solid #4b74ff;
+  }
+}
